@@ -6,7 +6,7 @@ MAINTAINER Vinay Bharadwaj <vbharadwaj@milcord.com>
 
 ENV PATH $PATH:/var/lib/neo4j/bin
 
-ENV NEO4J_VERSION 1.9.8
+ENV NEO4J_VERSION 2.1.5
 
 RUN apt-get update \
     && apt-get install -y curl \
