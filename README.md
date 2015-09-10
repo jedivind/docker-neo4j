@@ -1,4 +1,4 @@
-## Container for Neo4j 2.2 Community Edition
+## Container for Neo4j 2.1.5 Community Edition
 
 **Note: this is just _work in progress_ Beta state, not suited for production/serious use**
 
@@ -7,14 +7,14 @@ It is used in mission-critical apps by thousands of leading startups, enterprise
 
 Learn more on http://neo4j.com and get started with http://neo4j.com/developer
 
-This Dockerfile creates a container for Neo4j 2.2.5 community edition that is ready to run and can link to your external data directories.
+This Dockerfile creates a container for Neo4j 2.1.5 community edition that is ready to run and can link to your external data directories.
 
 ### Setup
 
 1. Build & Run:
 
 ```
-git clone https://github.com/neo4j-contrib/docker-neo4j
+git clone https://github.com/jedivind/docker-neo4j
 cd docker-neo4j
 docker build .
 
@@ -39,7 +39,7 @@ Please note that there is an exception printed for recreating the RDD database, 
 
 ### Authentication
 
-Please note that Neo4j 2.2.5 requires authentication.
+Please note that Neo4j 2.1.5 requires authentication.
 You have to login with `neo4j/neo4j` at the first connection and set a new password.
 The auth credentials are stored in the `/data/dbms/auth` file, which will reside in your external directory.
 
